@@ -1,0 +1,22 @@
+{
+  "name": "cpsc349-exercise4",
+  "version": "1.0.0",
+  "description": "N/A",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pocketbase": "./pocketbase serve",
+    "esbuild": "esbuild src/app.jsx --outfile=pb_public/app.js --watch",
+    "browsersync": "browser-sync http://localhost:8090 --files 'pb_public/**/*'",
+    "start": "npm-run-all --parallel esbuild pocketbase browsersync"
+  },
+  "author": "Cristopher Briseno",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "0.16.4"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.2.4"
+  }
+}
