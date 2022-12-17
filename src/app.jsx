@@ -21,5 +21,6 @@ function App () {
     <div className='App'>
       <h1>Hello, {authData.admin.email}</h1>
     </div>
+    
   )
 }

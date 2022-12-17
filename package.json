@@ -8,7 +8,9 @@
     "pocketbase": "./pocketbase serve",
     "esbuild": "esbuild src/app.jsx --outfile=pb_public/app.js --watch",
     "browsersync": "browser-sync http://localhost:8090 --files 'pb_public/**/*'",
-    "start": "npm-run-all --parallel esbuild pocketbase browsersync"
+    "tailwind": "tailwindcss -i src/input.css -o pb_public/output.css --watch",
+    "start": "npm-run-all --parallel esbuild pocketbase tailwind browsersync"
+    
   },
   "author": "Cristopher Briseno",
   "license": "ISC",
