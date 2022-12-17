@@ -11,60 +11,71 @@
 </head>
 
 <body>
-    <section class="text-gray-600 body-font overflow-hidden">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="-my-8 divide-y-2 divide-gray-100">
-            <div class="py-8 flex flex-wrap md:flex-nowrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="font-semibold title-font text-gray-700">CATEGORY</span>
-                <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="py-8 flex flex-wrap md:flex-nowrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="font-semibold title-font text-gray-700">CATEGORY</span>
-                <span class="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Meditation bushwick direct trade taxidermy shaman</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="py-8 flex flex-wrap md:flex-nowrap">
-              <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                <span class="font-semibold title-font text-gray-700">CATEGORY</span>
-                <span class="text-sm text-gray-500">12 Jun 2019</span>
-              </div>
-              <div class="md:flex-grow">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2>
-                <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                  <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
+    <h1>Welcome to my app!</h1>
+<ul>
+  {{#if currentUser}}
+    <nav class="flex items-center flex-wrap bg-[#0061ff] justify-between p-5 border-solid border-b-2 border-[#101F5E]">
+        <p class="text-2xl">Insert Name Here</p>
+        <div class="block float-right space-x-5">
+            <a class="hover:text-[#5696FF]" href="#">Home</a>
+            <a class="hover:text-[#5696FF]" href="#">Journal</a>
+            <a class="hover:text-[#5696FF]" href="aboutme.html">About me</a>
+        </div>  
+    </nav>
+
+    <h1 class ="text-6xl text-center p-5 pt-9  text-left" >Insert Name Here</h1>
+    <h2 class="text-3xl text-center p-2 text-center">The future of journaling</h2>
+    
+    <div class="text-center justify-center pt-28">
+        <p class="text-center text-2xl">A relaxing place to journal and share your thoughts without all the bloat</p>
+
+        <div class="flex text-center justify-center h-15 pt-16">
+            <img class="decimg" src="index.jpeg" alt="dog">
+            <ul class="p-4">
+                <li><h3 class="text-3xl">Easy to use interface</h3></li>
+                <li class="pt-4"><p>A website that lets you easily journal anytime, anywhere</p></li>
+                <li class="pt-2"><p>Easily edit and jot down your thoughts </p></li>
+            </ul>
         </div>
-      </section>
+        
+        <div class="p-10">
+            <a class="hover:text-[#5696FF] text-5xl rounded border-2 border-solid p-4 bg-[#101F5A] hover:border-[#5696FF]" href="aboutme.html">Click here to view your journal!</a>
+        </div>
+    </div>
+
+  {{else}}
+    <nav class="flex items-center flex-wrap bg-[#0061ff] justify-between p-5 border-solid border-b-2 border-[#101F5E]">
+        <p class="text-2xl">Insert Name Here</p>
+        <div class="block float-right space-x-5">
+            <a class="hover:text-[#5696FF] text-xl rounded border-2 border-solid p-2 border-[#101F5A] hover:border-[#5696FF]" href="signup.html">Sign up today</a>
+            <a class="hover:text-[#5696FF]" href="#">Home</a>
+            <a class="hover:text-[#5696FF]" href="aboutme.html">About me</a>
+        </div>  
+    </nav>
+
+    <h1 class ="text-6xl text-center p-5 pt-9  text-left" >Insert Name Here</h1>
+    <h2 class="text-3xl text-center p-2 text-center">The future of journaling</h2>
+    
+    <div class="text-center justify-center pt-28">
+        <p class="text-center text-2xl">A relaxing place to journal and share your thoughts without all the bloat</p>
+
+        <div class="flex text-center justify-center h-15 pt-16">
+            <img class="decimg" src="index.jpeg" alt="dog">
+            <ul class="p-4">
+                <li><h3 class="text-3xl">Easy to use interface</h3></li>
+                <li class="pt-4"><p>A website that lets you easily journal anytime, anywhere</p></li>
+                <li class="pt-2"><p>Easily edit and jot down your thoughts </p></li>
+            </ul>
+        </div>
+        
+        <div class="p-10">
+            <p class="text-center text-2xl pt-20 p-10">Join Today!</p>
+            <a class="hover:text-[#5696FF] text-5xl rounded border-2 border-solid p-4 bg-[#101F5A] hover:border-[#5696FF]" href="signup.html">Sign up today</a>
+            <p class="text-center text-xl pt-10 p-10">Free to signup and use</p>
+        </div>
+    </div>
+  {{/if}}
+</ul>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 </body>
